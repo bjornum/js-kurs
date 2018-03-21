@@ -16,7 +16,7 @@ return val * 2;
 }
 
 function addText(){
-   var el = document.getElementById("textChange");
+   var el = document.getElementById("textChange");}
    
    if (el.innerHTML ===  "rofl"){
    el.innerText = null;
@@ -28,4 +28,3 @@ function addText(){
 function addText2(){
     document.getElementById("textChange").innerHTML = "knapp nummer 2"
 }
-
