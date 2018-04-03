@@ -29,16 +29,13 @@ function mousex2click() {
     document.getElementById("mouse").innerHTML ="You did it";}
 
 
-/*when mouse enters, moves or leave an element*/
-
-function mousemove() {
-    document.getElementById("test").style.color = "orange";}
-
-function mouseenter() {
-    document.getElementById("test").style.color = "green";}
+/*when mouse enters, leaves or moves in an element*/
 
 function mouseisover() {
-    document.getElementById("test").innerHTML="sadkhkdhakhd";}
+    document.getElementById("prov").innerHTML="aasdf";}
 
+function mouseisout() {
+    document.getElementById("prov").innerHTML="yasdasdadad";}
 
-
+function mouseismoving() {
+    document.getElementById("prov").innerHTML="weeeee";}
