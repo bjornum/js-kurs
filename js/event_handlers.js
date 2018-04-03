@@ -30,6 +30,7 @@ function mousex2click() {
 
 
 /*when mouse enters, moves or leave an element*/
+
 function mousemove() {
     document.getElementById("test").style.color = "orange";}
 
