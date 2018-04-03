@@ -27,3 +27,14 @@ function knapp1(){
 function knapp2(){
     document.getElementById("bjorn").innerHTML = "TESTING2";
 }
+
+/*on mouseover and onmouseout */
+
+function mouseover(obj){
+    obj.innerHTML = "Click me"
+}
+
+function musgone(obj){
+    obj.innerHTML = "see meeeee"
+}
+
