@@ -8,10 +8,36 @@ function functionID (){
     document.getElementById("scriptID").innerHTML="hfdg"
 }
 
+
+/*when mouse button is pushed down and released*/
 function mouseDown() {
-    document.getElementById("myP").style.color = "red";
-}
+    document.getElementById("mouse").style.color = "red";}
 
 function mouseUp() {
-    document.getElementById("myP").style.color = "green";
-}
+    document.getElementById("mouse").style.color = "black";}
+
+
+/*when clicking or double clicking an element*/
+
+function mouseclick() {
+    document.getElementById("mouse").innerHTML ="singular";}
+
+function mouseclick_knapp2() {
+    document.getElementById("mouse").innerHTML ="trykk meg en gang til";}
+
+function mousex2click() {
+    document.getElementById("mouse").innerHTML ="You did it";}
+
+
+/*when mouse enters, moves or leave an element*/
+function mousemove() {
+    document.getElementById("test").style.color = "orange";}
+
+function mouseenter() {
+    document.getElementById("test").style.color = "green";}
+
+function mouseisover() {
+    document.getElementById("test").innerHTML="sadkhkdhakhd";}
+
+
+

@@ -13,22 +13,22 @@
     <div>js kurs</div>
 
     <div id="bjorn"></div>
+
   <!--onclick-->
-    <button onclick="knapp1()">onclick</button>
+    <button onclick="mouseclick()">button1</button>
    
 <!--double click-->
-<button onclick="knapp2()">
-    <div ondblclick="knapp2a()">on double click
-    </div>
-</button>
+    <button onclick="mouseclick_knapp2()">
+        <div ondblclick="mousex2click()">test</div>
+    </button>
 
-<button id="knapptest">TEST</button>
-
-
-<p id="myP" onmousedown="mouseDown()" 
- onmouseup="mouseUp()">
+<!--mouse click over text-->
+<p id="mouse" onmousedown="mouseDown()" 
+ onmouseup="mouseUp()"
+ onmouseover="mouseover()">
         Click the text! 
 </p>
+
 
     <h1></h1>
     <script src="js/app.js"></script>
