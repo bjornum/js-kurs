@@ -21,11 +21,26 @@ function addText(){
 
     /*basic button*/
 function knapp1(){
-    document.getElementById("bjorn").innerHTML = "testing1";
+    document.getElementById("bjorn").innerHTML = "normal click";
+}
+/*test for ondblclick*/
+function knapp2a(){
+    document.getElementById("bjorn").innerHTML = "There, Hello THERE";
+}
+
+function kn2md(){
+    document.getElementById("bjorn").style.color = "red";
+}
+
+function abc() {
+    document.getElementById("bjorn").style.color = "red";
+}
+function abcd() {
+    document.getElementById("bjorn").style.fontsize ="larger";
 }
 
 function knapp2(){
-    document.getElementById("bjorn").innerHTML = "TESTING2";
+    document.getElementById("bjorn").innerHTML = "Hello";
 }
 
 /*on mouseover and onmouseout */
@@ -36,5 +51,10 @@ function mouseover(obj){
 
 function musgone(obj){
     obj.innerHTML = "see meeeee"
+}
+
+function knapptest(){
+    document.getElementById(bjorn).ondblclick="fjdsfsfjos";
+    document.getElementById(bjorn).texts="fdsfkhdfjsdg  gkh";
 }
 
