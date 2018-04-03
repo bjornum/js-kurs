@@ -1,6 +1,6 @@
 
-var customHeader = "something";
 var heading = document.querySelector(`h1`);
+var customHeader = "something";
 heading.textcontent = customHeader;
 
 
@@ -15,16 +15,15 @@ function multiplyByTwo(n1, n2){
 return val * 2;
 }
 
+/*function + id to the function, variable to the id of the code*/
 function addText(){
    var el = document.getElementById("textChange");}
-   
-   if (el.innerHTML ===  "rofl"){
-   el.innerText = null;
-} else {
-    el.innerText = "rofl"
+
+    /*basic button*/
+function knapp1(){
+    document.getElementById("bjorn").innerHTML = "testing1";
 }
 
-
-function addText2(){
-    document.getElementById("textChange").innerHTML = "knapp nummer 2"
+function knapp2(){
+    document.getElementById("bjorn").innerHTML = "TESTING2";
 }
