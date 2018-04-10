@@ -4,3 +4,502 @@
     height: 20px;
     padding:50px;
 }
+
+.primary{color:cyan;}
+.primary-light{color:rgb(182, 235, 235);}
+.primary-dark{color: rgb(10, 151, 151);}
+.secondary{color: lightgrey;}
+.secondary-light{color:rgb(229, 226, 226);}
+.secondary-dark{color:rgb(180, 177, 177);}
+.accent{
+    color:"#";
+}
+.accent-light{
+    color:"#";
+}
+
+.accent-dark{
+    color:"#";
+}
+
+.background-primary{
+    background-color:"#";
+}
+.background-secondary{
+    background-color:"#";
+}
+
+.info{color:blue;}
+.info-light{color:rgb(67, 67, 247);}
+.info-dark{color:rgb(6, 6, 185);}
+
+.success{color:green;} 
+.success-light{color:rgb(6, 190, 6);}
+.success-dark{color:rgb(2, 88, 2);}
+
+.warning{color:orange}
+.warning-light{color:rgb(238, 186, 89);}
+.warning-dark{color:rgb(190, 125, 4);}
+
+.danger{color:red;}
+.danger-light{color:rgb(236, 74, 74);}
+.danger-dark{color:rgb(192, 7, 7);}
+
+.inactive{color:gray;}
+.inactive-light{color:rgb(170, 165, 165);}
+.inactive-dark{color:rgb(83, 83, 83);}
+
+
+.a:link{
+    color: white;
+}
+
+a:visited{
+    color:rgb(33, 57, 124);
+    background-color:black;
+}
+
+a:hover{
+    color:white;
+    background-color:rgb(29, 21, 21);
+}
+
+a:active{
+    color:green;
+    background-color:rgb(29, 21, 21);
+}
+
+.navbar-top-color{
+    background-color:black;
+    color:white;
+    border:solid rgb(53, 44, 44);
+}
+
+.navbar-side-color{
+    background-color: rgb(44, 41, 41);
+    color:white;
+    border:solid rgb(63, 40, 40);
+}
+
+.red{background-color:red;}
+.blue{background-color:blue;}
+.green{background-color:green;}
+.black{background-color:black;}
+.lightgray{background-color:lightgray;}
+.orange{background-color:orange;}
+.purple{background-color:purple;}
+.lime{background-color:lime;}
+
+/*default*/
+.grid-main-layout{
+    display:grid;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-columns:1fr;
+    height:100%;
+}
+
+.grid-navbar{
+    grid-row: 1 / 2; 
+    grid-column: 1 / 5;
+}
+
+.grid-footer{
+    grid-row: 3 / 4;
+    grid-column: 1 / 5;
+}
+
+.grid-middle-part{
+        grid-row: 2 / 3;
+        grid-column: 1 / 3;
+}
+
+/*default end*/
+
+/* front page start*/
+
+.grid-frontpage-middle-divide{
+    display:grid;
+    grid-template-rows: 60% 40%;
+    grid-template-columns: 100%;
+    height:100%;
+}
+/*front page end*/
+
+/* project login */
+
+.grid-login-body-layout{
+    display:grid;
+    grid-template-rows: 20% 50% 30%;
+    grid-template-columns: 20% 60% 20%;
+    height:100%;
+}
+
+.grid-login-box{
+    grid-row: 2 / 3;
+    grid-column:2 / 3;
+}
+/*project login end */
+
+/*project userprofile */
+
+.grid-userprofile-middle-template{
+    display:grid;
+    grid-template-rows: 40% 60%;
+    grid-template-columns: 100%;
+    height:100%;
+}
+
+/*project userprofile end*/
+
+/* products */
+
+.grid-products-middle{
+    display:grid;
+    grid-template-rows: 30% 25% 45%;
+    grid-template-columns: 25% 1% 10% 25% 4% 25% 10%;
+    height: 100%;
+}
+
+.grid-products-side-navbar{
+    grid-row: 1 / 4;
+    grid-column: 1 / 2;
+}
+
+.grid-products-sidebar-line{
+    grid-row: 1 / 4;
+    grid-column: 2 / 3;
+}
+
+.grid-products-image1-layout{
+    grid-row: 2 / 3;
+    grid-column: 4 / 5;
+}
+
+.grid-products-image2-layout{
+    grid-row: 2 / 3;
+    grid-column: 6 / 7;
+}
+
+.grid-productpage-middle{
+    display:grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 100%;
+    height:100%;
+    width:100%;
+}
+
+/*product end*/
+
+/*project about_page */
+
+.grid-about-middle{
+    display:grid;
+    grid-template-rows: 25% 35% 40%;
+    grid-template-columns:100%;
+    height:100%;
+}
+/*about page end*/
+
+/* dashboard start*/
+
+.grid-dashboard-middle{
+    display:grid;
+    grid-template-rows: 25% 40% 35%;
+    grid-template-columns:1fr;
+    height:100%;
+    width:100%;
+}
+
+/*dashboard end*/
+
+.grid-front-middle{
+    display:grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 100%;
+    height:100%;
+    width:100%;
+}
+
+/* can never get bigger than the scales below*/
+.img{
+    max-height:100%;
+    max-width:100;
+    background-size: 100%;
+}
+/*end*/
+
+.img-portrait-medium{
+    height:200px;
+    width:150px;
+}
+
+.img-portrait-small{
+    height:80px;
+    width:30px;
+}
+
+.img-landscape-medium{
+    height:150px;
+    width: 300px;
+}
+
+/* images for index.html */
+
+.img-scaling{
+    object-fit: scale-down;
+}
+
+
+.img-smite{
+    background-image: url("C:/Users/ITK17/Documents/GitHub/web-shop/img/smite.jpg");
+    background-size: 100%;
+    height:200px;
+}
+
+/*main*/
+.flex-it-all{
+    display:flex;
+}
+
+.flex-direction-row{
+    display:flex;
+    flex-direction:row;
+}
+
+.flex-direction-column{
+    display:flex;
+    flex-direction:column;
+}
+
+.flex-align-center{
+    align-self:center;
+}
+
+.flex-justify-center{
+    display:flex;
+    justify-content:center;
+}
+
+.flex-boxes{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-direction:row;
+}
+
+.flex-boxes2{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:row;
+}
+
+/* main end */
+
+/*Login */
+
+.flex-loginbar{
+    border:solid 1px black;
+    height:30px;
+    width:200px;
+    margin-left:40px;
+    justify-content:center;
+    background-color:white;
+    flex-wrap:nowrap;
+}
+
+.flex-password-bar{
+    border:solid 1px black;
+    height:30px;
+    width:200px;
+    margin-left:17px;
+    justify-content:center;
+    background-color:white;
+    flex-wrap:nowrap;
+}
+
+.text-align{
+    margin-left:30px;
+}
+
+.password-padding{
+    padding-top:5px;
+}
+
+.login-button{
+    justify-self:flex-end;
+    margin-left:240px;
+    margin-top:10px;
+}
+
+.login-headliner-center{
+    display:flex;
+    justify-content:center;
+    margin-left:30%;
+    margin-bottom: 30px;
+    margin-top:10px;
+}
+
+.flex-login-layout{
+    display:flex;
+    padding:100px;
+    border:solid 1px black;
+    width:10em;
+    height:10em;
+}
+
+.flex-positioning{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.flex-login-boxes{
+    display:flex;
+    height:2em;
+    width:10em;
+    border:solid 1px black;
+    margin-bottom:5px;
+    margin-left:5px;
+}
+.flex-nowrap{
+    display:flex;
+    flex-wrap:nowrap;
+}
+
+.flex-login-headliner{
+    display:flex;
+    margin-bottom:10px;
+}
+
+.flex-login-button{
+    display:flex;
+    justify-content:flex-end;
+    margin-top:1em;
+}
+/*login end*/
+/*dashboard.html*/
+
+.flex-box-top-size{
+    display:flex;
+    width:6em;
+    height:7em;
+    border:solid 1px black;
+}
+
+.flex-box-mid-size{
+    display:flex;
+    width:10em;
+    height:10em;
+    border:solid 1px black;
+}
+
+.flex-dashboard-side-nav{
+    display:flex;
+    flex-direction: column;
+    max-width:20%;
+    padding:30px;
+}
+
+.flex-dashboard-middle{
+    display:flex;
+    width:80%;
+}
+/*dashboard.html end*/
+
+/*about.html*/
+
+.flex-about-box-top{
+    display:flex;
+    width:40em;
+    height:6em;
+    margin-left:25%;
+    margin-right:25%;
+    border: solid 1px black;
+}
+
+.flex-column{
+    display:flex;
+    flex-direction:column;
+}
+
+.flex-about-size-box-bot{
+    display:flex;
+    width:7em;
+    height:6em;
+    border:solid 1px black;
+}
+/*about end*/
+
+/*user profile*/
+
+.flex-userprofile-box-top{
+    display:flex;
+    width:7em;
+    height:7em;
+    border:solid 1px black;
+    margin-left:60px;
+}
+
+.flex-align-box{
+    justify-content:center;
+    align-items: center;
+}
+
+.flex-userprofile-align-text{
+    margin-left:60px;
+}
+
+/*product start*/
+
+.flex-product-side-nav{
+    display:flex;
+    flex-direction: column;
+    max-width:20%;
+    padding:30px;
+}
+
+.flex-product-middle{
+    display:flex;
+    width:80%;
+    height:100%
+}
+
+.flex-product-boxes{
+    display:flex;
+    width:10em;
+    padding:40px;
+    border:solid 1px black;
+}
+/*product end*/
+
+/*front page start*/
+
+.flex-front-side-nav{
+    display:flex;
+    flex-direction: column;
+    max-width:20%;
+    padding:30px;
+}
+
+.flex-front-middle{
+    display:flex;
+    width:80%;
+    height:100%
+}
+
+.flex-front-big-box{
+    display:flex;
+    width:10em;
+    padding:80px;
+    margin-top:40px;
+    border:solid 1px black;
+}
+
+.flex-front-boxes{
+display:flex;
+height:9em;
+width:7em;
+padding:10px;
+margin:20px;
+}

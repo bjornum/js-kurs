@@ -1,0 +1,247 @@
+/*main*/
+.flex-it-all{
+    display:flex;
+}
+
+.flex-direction-row{
+    display:flex;
+    flex-direction:row;
+}
+
+.flex-direction-column{
+    display:flex;
+    flex-direction:column;
+}
+
+.flex-align-center{
+    align-self:center;
+}
+
+.flex-justify-center{
+    display:flex;
+    justify-content:center;
+}
+
+.flex-boxes{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-direction:row;
+}
+
+.flex-boxes2{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:row;
+}
+
+/* main end */
+
+/*Login */
+
+.flex-loginbar{
+    border:solid 1px black;
+    height:30px;
+    width:200px;
+    margin-left:40px;
+    justify-content:center;
+    background-color:white;
+    flex-wrap:nowrap;
+}
+
+.flex-password-bar{
+    border:solid 1px black;
+    height:30px;
+    width:200px;
+    margin-left:17px;
+    justify-content:center;
+    background-color:white;
+    flex-wrap:nowrap;
+}
+
+.text-align{
+    margin-left:30px;
+}
+
+.password-padding{
+    padding-top:5px;
+}
+
+.login-button{
+    justify-self:flex-end;
+    margin-left:240px;
+    margin-top:10px;
+}
+
+.login-headliner-center{
+    display:flex;
+    justify-content:center;
+    margin-left:30%;
+    margin-bottom: 30px;
+    margin-top:10px;
+}
+
+.flex-login-layout{
+    display:flex;
+    padding:100px;
+    border:solid 1px black;
+    width:10em;
+    height:10em;
+}
+
+.flex-positioning{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.flex-login-boxes{
+    display:flex;
+    height:2em;
+    width:10em;
+    border:solid 1px black;
+    margin-bottom:5px;
+    margin-left:5px;
+}
+.flex-nowrap{
+    display:flex;
+    flex-wrap:nowrap;
+}
+
+.flex-login-headliner{
+    display:flex;
+    margin-bottom:10px;
+}
+
+.flex-login-button{
+    display:flex;
+    justify-content:flex-end;
+    margin-top:1em;
+}
+/*login end*/
+/*dashboard.html*/
+
+.flex-box-top-size{
+    display:flex;
+    width:6em;
+    height:7em;
+    border:solid 1px black;
+}
+
+.flex-box-mid-size{
+    display:flex;
+    width:10em;
+    height:10em;
+    border:solid 1px black;
+}
+
+.flex-dashboard-side-nav{
+    display:flex;
+    flex-direction: column;
+    max-width:20%;
+    padding:30px;
+}
+
+.flex-dashboard-middle{
+    display:flex;
+    width:80%;
+}
+/*dashboard.html end*/
+
+/*about.html*/
+
+.flex-about-box-top{
+    display:flex;
+    width:40em;
+    height:6em;
+    margin-left:25%;
+    margin-right:25%;
+    border: solid 1px black;
+}
+
+.flex-column{
+    display:flex;
+    flex-direction:column;
+}
+
+.flex-about-size-box-bot{
+    display:flex;
+    width:7em;
+    height:6em;
+    border:solid 1px black;
+}
+/*about end*/
+
+/*user profile*/
+
+.flex-userprofile-box-top{
+    display:flex;
+    width:7em;
+    height:7em;
+    border:solid 1px black;
+    margin-left:60px;
+}
+
+.flex-align-box{
+    justify-content:center;
+    align-items: center;
+}
+
+.flex-userprofile-align-text{
+    margin-left:60px;
+}
+
+/*product start*/
+
+.flex-product-side-nav{
+    display:flex;
+    flex-direction: column;
+    max-width:20%;
+    padding:30px;
+}
+
+.flex-product-middle{
+    display:flex;
+    width:80%;
+    height:100%
+}
+
+.flex-product-boxes{
+    display:flex;
+    width:10em;
+    padding:40px;
+    border:solid 1px black;
+}
+/*product end*/
+
+/*front page start*/
+
+.flex-front-side-nav{
+    display:flex;
+    flex-direction: column;
+    max-width:20%;
+    padding:30px;
+}
+
+.flex-front-middle{
+    display:flex;
+    width:80%;
+    height:100%
+}
+
+.flex-front-big-box{
+    display:flex;
+    width:10em;
+    padding:80px;
+    margin-top:40px;
+    border:solid 1px black;
+}
+
+.flex-front-boxes{
+display:flex;
+height:9em;
+width:7em;
+padding:10px;
+margin:20px;
+}
