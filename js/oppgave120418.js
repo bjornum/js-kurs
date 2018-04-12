@@ -1,8 +1,8 @@
 var theList=[];
 var typeUser=document.getElementById(`userInput`);
 var typeError=document.getElementById(`error`);
-var typeWords=document.getElementById(`words`)
-
+var typeWords=document.getElementById(`words`);
+var removeWord=document.getElementById(`remove`);
 
 function minListe(){
     typeError.innerHTML="";
@@ -19,7 +19,20 @@ function progress(){
 }
 
 
-console.log(theList,typeError,typeUser,typeWords)
+
+//function tesst(){
+    //words.innerHTML=theList.splice(bil,1);
+//}
+
+function fjern(){
+    words.innerHTML=theList.splice(5,1);
+}
+
+
+
+
+
+
     
 
     
