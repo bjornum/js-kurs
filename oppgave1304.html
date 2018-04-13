@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Varelager</title>
+    <link rel="stylesheet" href="oppgave1304/oppgave.css">
+</head>
+
+<body>
+
+    <ul id="selecttab">
+        <li data-tab="tab1" onclick="selectTab(this)">Oppgave</li>
+        <li data-tab="tab2" class="active" onclick="selectTab(this)">Løsning</li>
+    </ul>
+
+    <div id="tab1" class="tab ">
+        <h1>Varelager</h1>
+        <p>Lag en varelageroversikt, den bør inneholde følgende elementer:</p>
+        <ul>
+            <li>
+                Opprett en variabel som er et Array element, velg selv om du ønsker å forhåndsfylle den.
+                <br>
+                <code>var Varelager = [];</code>
+            </li>
+
+            <li>
+                Fyll inn dette arrayet med diverse varelageroversikt, merk du kan også bruke mockaroo.com for å generere en større liste
+                over varer.
+                <br>
+                <code style="">
+                    Varelager = [ { id: 1, varenavn: "Datamus", pris: 99, antall: 100 }, { id: 2, varenavn: "Tastatur", pris: 199, antall: 3
+                    }, { id: 3, varenavn: "Skjerm", pris: 1099, antall: 0 }]
+                </code>
+            </li>
+
+            <li>
+                list ut dette varelageret gjennom en løkke, eksempel kan være å putte dette i en tabell.
+                <table border=1>
+                    <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>Navn</th>
+                            <th>Pris</th>
+                            <th>Antall</th>
+                        </tr>
+                    </thead>
+                    <tbody id="data">
+                        <tr>
+                            <td>1</td>
+                            <td>Datamus</td>
+                            <td>99</td>
+                            <td>100</td>
+                        </tr>
+                        <tr class="nestentomt">
+                            <td>2</td>
+                            <td>Tastatur</td>
+                            <td>199</td>
+                            <td>3</td>
+                        </tr>
+                        <tr class="tomt">
+                            <td>3</td>
+                            <td>Skjerm</td>
+                            <td>1099</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </li>
+            <li>
+                Ha varierende antall på varer. Du skal gjøre den raden rød, hvis det ikke er noen varer igjen. Gul hvis det er mindre enn
+                10 varer, bestem selv hvordan du ønsker å gi beskjed om at det begynner å bli tomt, eller er tomt.
+            </li>
+            <li>
+                Som i går, legg inn mulighet for å legge inn nye varer
+            </li>
+            <li>
+                i footer på tabellen, legg inn noe som summerer antall varer, eller total vareverdibeholdning.
+
+            </li>
+            <li>
+                +++
+                <br> finn ut hvordan du ønsker å legge til annen funksjonalitet. Men bruk det vi har snakket om denne uka, både
+                når det gjelder objekter, funksjoner og løkker. Ikke skriv deg i hjel.
+            </li>
+        </ul>
+    </div>
+
+    <div id="tab2" class="tab active">
+        <h1>Løsning</h3>
+
+            <div style="border: 1px solid black; height: 30px; margin-bottom: 15px;">
+                <input type="text" id="searchText" onkeyup="sokVarer();">
+            </div>
+            <table border=1>
+                <thead id="varelagerheader">
+                    <tr>
+                        <th>
+                            Id
+                        </th>
+                        <th>
+                            Varenavn
+                        </th>
+                        <th>
+                            Pris
+                        </th>
+                        <th>
+                            Antall
+                        </th>
+                        <th>
+                            Knapper
+                        </th>
+                    </tr>
+                    <tr>
+                        <td colspan=2>
+                            <button onclick="hentTommeVarer();">Vis tomme varer</button>
+                        </td>
+                        <td colspan=3>
+                            <button onclick="hentAlleVarer();">Vis alle varer</button>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody id="varelageroversikt">
+
+                </tbody>
+                <tfoot>
+
+                </tfoot>
+            </table>
+    </div>
+
+
+    <br>
+    <hr>
+    <br>
+    <div id="timeWrapper">
+        <div id="timeProgress"></div>
+        <div id="timeUpdate"></div>
+        <span id="timeText"></span>
+
+    </div>
+    <!-- <input type="text" id="inputTekst" class="headerInput">
+    <button type="button" id="cmdLeggTilTekst" class="headerInput" onclick="LeggTilListe()">Legg til tekst</button> -->
+    <script src="varelager.js"></script>
+<script src="oppgave1304/oppgaven.js"></script>
+</body>
+
+</html>

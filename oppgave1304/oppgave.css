@@ -1,0 +1,199 @@
+code {
+    background-color: lightgray;
+    border: 1px dotted black;
+    box-sizing: border-box;
+    padding: 0 25px;
+}
+
+button {
+    border: none;
+    padding: 0 15px;
+
+}
+
+#TodoListe button {
+    font-size: 22px;
+}
+
+.headerInput {
+    height: 30px;
+}
+
+ul#TodoListe {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#TodoListe li {
+    box-sizing: border-box;
+    padding: 0;
+    height: 50px;
+    text-align: center;
+    width: 300px;
+    border: 1px solid black;
+    margin: 15px 0;
+    position: relative;
+    transition: all 1s;
+}
+
+#TodoListe li.slideout {
+    animation: slideout 1s;
+}
+
+#TodoListe li.done {
+    opacity: 0.5;
+}
+
+#TodoListe li.done span {
+    text-decoration: line-through;
+}
+
+#TodoListe li span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+@keyframes slideout {
+    from {
+        opacity: 1;
+        transform: scale(1)
+    }
+    to {
+        transform: scale(10) rotate(180deg);
+        opacity: 0;
+
+    }
+}
+
+/* Buttons */
+
+#TodoListe li button.done {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#TodoListe li button.delete {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Time */
+
+#timeWrapper {
+    height: 30px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin: 30px 0;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 2;
+    width: 500px;
+    text-align: center;
+}
+
+#timeText {
+    z-index: 5;
+    position: relative;
+}
+
+#timeProgress {
+    height: 100%;
+    width: 0%;
+    transition: all 1s;
+    background: greenyellow;
+    text-align: center;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+}
+
+#timeProgress.warning {
+    background-color: goldenrod;
+}
+
+#timeProgress.alert {
+    animation: alertAnim 3s infinite;
+}
+
+#timeUpdate {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(100, 100, 100, 0.1);
+    top: 0;
+    height: 100%;
+    z-index: 3;
+}
+
+#timeUpdate.active {
+    animation: updateActive 1s infinite;
+}
+
+@keyframes updateActive {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes alertAnim {
+    0% {
+        background-color: #00FFFF;
+    }
+    10% {
+        background-color: #FF0000;
+    }
+    100% {
+        background-color: #00FFFF;
+    }
+}
+
+.tomt {
+    background-color: salmon;
+}
+
+.nestentomt {
+    background-color: #cddb49;
+}
+
+.tab {
+    display: none;
+}
+
+.tab.active {
+    display: inherit;
+}
+
+ul#selecttab {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul#selecttab li {
+    display: inline;
+    border: 1px solid black;
+    padding: 15px;
+    margin: 7px;
+}
+
+ul#selecttab li.active {
+    background-color: greenyellow;
+}
+
+.empty {
+    background-color: red;
+    text-decoration: line-through;
+}
+
+.almostempty {
+    background-color: #aaaa00;
+}
