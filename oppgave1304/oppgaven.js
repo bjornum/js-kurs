@@ -24,14 +24,14 @@ var VareLager = VareLagerOriginal;
             var AntallVarer = 0;
             var NaaverendeVerdi = 0;
             document.querySelector('#varelageroversikt').innerHTML = '';
-            VareLager.sort(function (a, b) {
-                if (a.antall < b.antall) {
-                    return 1;
-                } else if (a.antall > b.antall) {
-                    return -1;
-                }
-                return 0;
-            });
+            // VareLager.sort(function (a, b) {
+            //     if (a.antall < b.antall) {
+            //         return 1;
+            //     } else if (a.antall > b.antall) {
+            //         return -1;
+            //     }
+            //     return 0;
+            // });
             for (var i = 0; i < VareLager.length; i++) {
                 var VareObjekt = VareLager[i];
                 AntallVarer += VareObjekt.antall;
@@ -216,3 +216,27 @@ var VareLager = VareLagerOriginal;
             }
 
         }
+
+        
+
+         function sortAntall() {
+            //  var Soketekst = document.querySelector('#searchText').value;
+            //  VareLagerOriginal = [];
+            var sortering = "antall";
+             VareLager.sort(function(a, b) {
+                 if (a[sortering] > b[sortering]) {
+                   return 1;
+                 }
+                 if (a[sortering] < b[sortering]) {
+                   return -1;
+                 }
+                 return 0;
+              });
+            oppdaterVarelagerOversikt();
+            }
+
+
+
+        // function sortAntall(){
+        //     pris.sort(function(a,b){return a-b});
+        // }
