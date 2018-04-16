@@ -237,6 +237,51 @@ var VareLager = VareLagerOriginal;
 
 
 
-        // function sortAntall(){
-        //     pris.sort(function(a,b){return a-b});
-        // }
+            function sortid() {
+                //  var Soketekst = document.querySelector('#searchText').value;
+                //  VareLagerOriginal = [];
+                var sortering = "id";
+                 VareLager.sort(function(a, b) {
+                     if (a[sortering] > b[sortering]) {
+                       return 1;
+                     }
+                     if (a[sortering] < b[sortering]) {
+                       return -1;
+                     }
+                     return 0;
+                  });
+                oppdaterVarelagerOversikt();
+                }
+    
+
+                function sortVarenavn() {
+                    //  var Soketekst = document.querySelector('#searchText').value;
+                    //  VareLagerOriginal = [];
+                    var sortering = "varenavn";
+                     VareLager.sort(function(a, b) {
+                         if (a[sortering] > b[sortering]) {
+                           return 1;
+                         }
+                         if (a[sortering] < b[sortering]) {
+                           return -1;
+                         }
+                         return 0;
+                      });
+                    oppdaterVarelagerOversikt();
+                    }
+
+                    function sortPris() {
+                        //  var Soketekst = document.querySelector('#searchText').value;
+                        //  VareLagerOriginal = [];
+                        var sortering = "pris";
+                         VareLager.sort(function(a, b) {
+                             if (a[sortering] > b[sortering]) {
+                               return 1;
+                             }
+                             if (a[sortering] < b[sortering]) {
+                               return -1;
+                             }
+                             return 0;
+                          });
+                        oppdaterVarelagerOversikt();
+                        }

@@ -197,3 +197,18 @@ ul#selecttab li.active {
 .almostempty {
     background-color: #aaaa00;
 }
+
+.button-antall{
+    border:solid 1px blue;
+    background-color:green;
+}
+
+.button-varenavn{
+    background-color:red;
+    border:solid 1px blue;
+}
+
+.button-id{
+    background-color: purple;
+    border:solid 1px greenyellow;
+}
