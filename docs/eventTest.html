@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/event.css">
+</head>
+<body onpaste="pasted()" oncopy="copyMeNot()" oncut="cutted()">
+
+    <h1>Event Handlers</h1>
+    <button onclick ="alerty()">pop an alert</button>
+    <button onclick="timey()">time</button>
+    <button onclick="popupTime()">time in an popup</button>
+    <button ondblclick ="alerty()">doubleclick only</button>
+    <button onclick="bgRed()">background to red</button>
+    <button onclick="bgGray()">background to grey</button>
+
+    <h1>Inputs</h1>
+
+    <div>
+        <h3>blur</h3>
+        <input onblur="blurAlert()" type="text">
+        <!--color changes-->
+        
+    </div>
+    <h1>Mouse and key features</h1>
+    <p>onkeydown red, onkeyup green, onblur gray, onmousedown yellow, onmouseup gray</p>
+    <input onkeydown="bgRed()" onkeyup="bgGreen()" onblur="bgGray()" onmousedown="bgYellow()" onmouseup="bgGray()" type="text">
+    <p>when mouse moves over and out</p>
+    <input onmouseover="bgGreen()" onmouseout="bgGray()" type="text">
+    <div>
+        <h3>change text color</h3>
+        <button onclick="textColorBlue()">change blue</button>
+        <button ondblclick="textColorDefault()">dblclick to default</button>
+
+    </div>
+    
+    <p id=redd></p>
+    <p id=bg></p>
+    <p id=time></p>
+    <h1>event way 2</h1>
+    <script src="../js/event.js"></script>
+</body>
+</html>
