@@ -7,18 +7,22 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/event.css">
 </head>
-<body onpaste="pasted()" oncopy="copyMeNot()" oncut="cutted()">
-
+<body onpaste="pasted()" oncopy="copyMeNot()" oncut="cutted()" oncontextmenu="return false;">
+    <!--in body added onpaste, oncopy, oncut, and disabled default context menu-->
     <h1>Event Handlers</h1>
     <button onclick ="alerty()">pop an alert</button>
     <button onclick="timey()">time</button>
     <button onclick="popupTime()">time in an popup</button>
     <button ondblclick ="alerty()">doubleclick only</button>
     <button onclick="bgRed()">background to red</button>
-    <button onclick="bgGray()">background to grey</button>
+    <button onclick="bgGray()" oncontextmenu="rightClicked()">background to grey</button>
 
     <h1>Inputs</h1>
-
+    
+    <option value="#">
+        <select name="#" id="#">test1</select>
+        <select name="#" id="#">test2</select>
+    </option>
     <div>
         <h3>blur</h3>
         <input onblur="blurAlert()" type="text">
@@ -36,7 +40,16 @@
         <button ondblclick="textColorDefault()">dblclick to default</button>
 
     </div>
-    
+    <!--right click menu-->
+    <div>
+        <ul>
+            <li>red</li>
+            <li>blue</li>
+            <li>green</li>
+        </ul>
+    </div>
+
+
     <p id=redd></p>
     <p id=bg></p>
     <p id=time></p>

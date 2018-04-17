@@ -57,3 +57,8 @@ function pasted(){
 function cutted(){
     alert("Ouch!!!")
 }
+
+//oncontextmenu
+function rightClicked(){
+    alert("test")
+}
